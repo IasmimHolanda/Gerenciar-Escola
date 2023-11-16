@@ -20,7 +20,7 @@ class Teacher {
             [professorData.nome, professorData.materia, professorData.email]
         );
     }
-
+    
     //get one teacher
     static async getProfessorById(id) {
         return db.oneOrNone('SELECT * FROM professores WHERE id = $1', id);
